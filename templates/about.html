@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block main %}
+<p>About What?</p>
+<form action="/about" method="post">
+    {{ form.csrf_token }}
+    {{ form.title }}
+    {{ form.submit }}
+</form>
+{% endblock %}
