@@ -1,0 +1,1 @@
+panel serve --address="127.0.0.1" --port=5006 holoviews_app.py --allow-websocket-origin=127.0.0.1:5000 --allow-websocket-origin=127.0.0.1:5006 --allow-websocket-origin=localhost:5006
