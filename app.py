@@ -6,8 +6,8 @@ from flask import send_from_directory
 app = Flask(__name__)
 
 
-#BOKEH_URL = "http://127.0.0.1:5006/holoviews_app"
-BOKEH_URL = "https://forecast-aset.herokuapp.com/holoviews_app"
+BOKEH_URL = "http://127.0.0.1:5006/holoviews_app"
+#BOKEH_URL = "https://foras.herokuapp.com/holoviews_app"
 
 # locally creates a page
 @app.route('/')
@@ -19,6 +19,9 @@ def index():
 
     return render_template("index.html", script=script, template="Flask", index=index)
 
+@app.route('/about-us')
+def about_us():
+    return render_template("about-us.html", template="Flask")
 
 if __name__ == '__main__':
     # runs app in debug mode
