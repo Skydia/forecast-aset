@@ -6,8 +6,8 @@ from flask import send_from_directory
 app = Flask(__name__)
 
 
-#BOKEH_URL = "http://127.0.0.1:5006/holoviews_app"
-BOKEH_URL = "https://forasdashboard.herokuapp.com/holoviews_app"
+BOKEH_URL = "http://127.0.0.1:5006/holoviews_app"
+#BOKEH_URL = "https://forasdashboard.herokuapp.com/holoviews_app"
 
 # locally creates a page
 @app.route('/')

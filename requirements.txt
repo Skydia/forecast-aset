@@ -31,3 +31,4 @@ wincertstore==0.2
 WTForms==2.2.1
 yfinance == 0.1.54
 holoviews == 1.13.3
+bokeh == 2.2.1
